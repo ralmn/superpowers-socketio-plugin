@@ -1,1 +1,1 @@
-declare function createServer(): any;
+declare function createServer(): Server;
