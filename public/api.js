@@ -14,7 +14,7 @@ SupAPI.registerPlugin('typescript-server', 'socket.io', {
 });
 
 SupAPI.registerPlugin('typescript-server', 'http-server', {
-  code: "/// < reference path=\"../typings/node/node.d.ts\">\n\n/**\n Create server for socket.io server\n @return http server\n**/\nfunction createServer(){\n  var http = require('http');\n  return http.createServer()\n}",
+  code: "/**\n Create server for socket.io server\n @return http server\n**/\nfunction createServer(){\n  var http = require('http');\n  return http.createServer()\n}",
   defs: "declare function createServer(): any;"
 });
 
