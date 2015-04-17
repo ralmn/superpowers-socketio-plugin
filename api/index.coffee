@@ -16,10 +16,6 @@ declare var Int32Array: {};
 interface Float32Array {}
 declare var Float32Array: {};
 """
-SupAPI.registerPlugin('typescript', 'socket.io-client', {
-  defs: fs.readFileSync(__dirname + '/../typings/socket.io-client/socket.io-client.d.ts', encoding: 'utf8')
-});
-
 SupAPI.registerPlugin('typescript-server', 'socket.io', {
   defs: fs.readFileSync(__dirname + '/../typings/socket.io/socket.io.d.ts', encoding: 'utf8')
 });
