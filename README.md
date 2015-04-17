@@ -29,13 +29,3 @@ io.on('connection', function(socket){
 console.log("Hello")
 server.listen(8005, "127.0.0.1");
 ```
-
-
-### Client exemple script
-```
-var socket = io.connect("127.0.0.1:8005");
-socket.on('msg', function(msg){
-  Sup.log(msg);
-})
-socket.emit("msg", "Coucou");
-```
